@@ -1,0 +1,1 @@
+SELECT emp_no, salary, ROW_NUMBER() over w as row_num from salaries window w as(partition by emp_no order by salary desc);

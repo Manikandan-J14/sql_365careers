@@ -1,0 +1,3 @@
+set @s_var1 = 3;
+# only visible in this session.cannot accessed from other sessions...
+select @s_var1;
